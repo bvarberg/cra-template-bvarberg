@@ -1,0 +1,17 @@
+{
+  "name": "cra-template-bvarberg",
+  "version": "0.1.0",
+  "description": "A personal, custom create-react-app template",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript"
+  ],
+  "author": "Byron Varberg",
+  "license": "MIT",
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

@@ -16,6 +16,12 @@
       "eslint-plugin-jest-dom": "^3.6.4",
       "prettier": "^2.2.1"
     },
+    "scripts": {
+      "fmt": "prettier --write .",
+      "fmt:check": "prettier --check .",
+      "lint": "eslint src --ext=ts,tsx",
+      "lint:fix": "npm run lint -- --fix"
+    },
     "eslintConfig": {
       "extends": [
         "react-app",

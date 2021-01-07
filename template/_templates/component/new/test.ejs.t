@@ -1,10 +1,9 @@
 ---
-to: '<%= includeTests ? `src/components/${path}/${componentName}.test.tsx` : null %>'
+to: "<%= includeTests ? `src/components/${path}/${componentName}.test.tsx` : null %>"
 unless_exists: true
 ---
-import { render } from '@testing-library/react';
-import { <%= componentName %> } from './<%= componentName %>';
+import { <%= componentName %> } from "./<%= componentName %>";
 
-describe('<%= componentName %>', () => {
-  it.todo('...');
+describe("<%= componentName %>", () => {
+  it.todo("...");
 });

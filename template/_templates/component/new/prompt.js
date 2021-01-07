@@ -23,7 +23,7 @@ module.exports = {
       .then(({ name, includeStories, includeTests }) => {
         const normalizedPath = name
           .split("/")
-          .map(part => i.camelize(part, false))
+          .map((part) => i.camelize(part, false))
           .join("/");
         const componentName = normalizedPath.split("/").pop();
 

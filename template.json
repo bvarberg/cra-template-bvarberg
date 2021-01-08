@@ -15,16 +15,21 @@
       "@storybook/node-logger": "^6.1.11",
       "@storybook/preset-create-react-app": "^3.1.5",
       "@storybook/react": "^6.1.11",
+      "@testing-library/cypress": "^7.0.3",
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
+      "cypress": "^6.2.1",
       "eslint-config-prettier": "^7.1.0",
+      "eslint-plugin-cypress": "^2.11.2",
       "eslint-plugin-jest-dom": "^3.6.4",
       "fishery": "^1.0.1",
       "hygen": "^6.0.4",
       "prettier": "^2.2.1"
     },
     "scripts": {
+      "cypress:open": "cypress open",
+      "cypress:run": "cypress run",
       "fmt": "prettier --write .",
       "fmt:check": "prettier --check .",
       "lint": "eslint src --ext=ts,tsx",
@@ -39,10 +44,14 @@
         "react-app/jest",
         "plugin:testing-library/react",
         "plugin:jest-dom/recommended",
+        "plugin:cypress/recommended",
         "prettier",
         "prettier/@typescript-eslint",
         "prettier/react"
       ],
+      "env": {
+        "cypress/globals": true
+      },
       "rules": {
         "sort-imports": [
           "error",

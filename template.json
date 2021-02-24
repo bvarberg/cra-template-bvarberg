@@ -23,7 +23,7 @@
       "eslint-config-prettier": "^8.0.0",
       "eslint-plugin-cypress": "^2.11.2",
       "eslint-plugin-jest-dom": "^3.6.4",
-      "fishery": "^1.0.1",
+      "fishery": "^1.2.0",
       "hygen": "^6.0.4",
       "prettier": "^2.2.1"
     },

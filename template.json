@@ -20,6 +20,7 @@
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
       "cypress": "^6.2.1",
+      "dependency-cruiser": "^9.24.0",
       "eslint-config-prettier": "^8.0.0",
       "eslint-plugin-cypress": "^2.11.2",
       "eslint-plugin-jest-dom": "^3.6.4",
@@ -30,6 +31,9 @@
     "scripts": {
       "cypress:open": "cypress open",
       "cypress:run": "cypress run",
+      "deps:check": "depcruise --config .depcruise/config.js --output-type err src",
+      "deps:graph": "depcruise --config .depcruise/config.js --output-type dot src | dot -T svg > deps.svg",
+      "deps:report": "depcruise --config .depcruise/config.js --output-type err-html --output-to deps.html src",
       "fmt": "prettier --write .",
       "fmt:check": "prettier --check .",
       "lint": "eslint src --ext=ts,tsx",
